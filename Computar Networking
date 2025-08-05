@@ -1,0 +1,109 @@
+# Module 3: Communication and Protocols
+
+## Module Objectives
+- Understand the role of protocols in data networks.
+- Learn how communication occurs across a network.
+- Describe the interaction between protocols and the layered model.
+- Analyze the structure of protocol data units (PDUs).
+
+---
+
+## 🌐 What Is Communication in Networking?
+Communication is the exchange of data between two or more devices.
+
+For successful communication, devices must:
+- Agree on rules (protocols)
+- Use common languages (data formats)
+- Understand addressing (source/destination)
+
+---
+
+## 📜 What Are Protocols?
+Protocols are rules and standards that define how data is transmitted.
+
+**Examples:**
+- HTTP: Web traffic
+- TCP/UDP: Transport layer protocols
+- IP: Routing and addressing
+- Ethernet: Local data transmission
+- DNS: Name to IP resolution
+
+---
+
+## 🧱 Networking Models
+
+### 1. OSI Model
+
+| Layer | Name         | Purpose                          |
+|-------|--------------|---------------------------------|
+| 7     | Application  | Interfaces with user             |
+| 6     | Presentation | Data formatting, encryption      |
+| 5     | Session      | Establish/maintain sessions      |
+| 4     | Transport    | End-to-end communication (TCP)  |
+| 3     | Network      | Routing, logical addressing      |
+| 2     | Data Link    | MAC addressing, switching        |
+| 1     | Physical     | Cables, NICs, transmission       |
+
+### 2. TCP/IP Model
+
+| Layer         | Function                        |
+|---------------|--------------------------------|
+| Application   | Applications and protocols      |
+| Transport     | TCP/UDP                        |
+| Internet      | IP addressing & routing         |
+| Network Access| Physical & Data Link            |
+
+---
+
+## 📦 Protocol Data Units (PDUs)
+
+| OSI Layer   | PDU Name  |
+|-------------|-----------|
+| Application | Data      |
+| Transport   | Segment   |
+| Network     | Packet    |
+| Data Link   | Frame     |
+| Physical    | Bits      |
+
+---
+
+## 🔁 Encapsulation & De-Encapsulation
+
+- **Encapsulation (Sender Side):**  
+  Data is passed down the OSI layers.  
+  Each layer adds a header (and sometimes trailer).
+
+- **De-Encapsulation (Receiver Side):**  
+  Data is passed up the OSI layers.  
+  Each layer removes its header to read the data.
+
+---
+
+## 🧑‍🤝‍🧑 Communication Types
+
+- **Unicast:** One-to-one  
+- **Broadcast:** One-to-all  
+- **Multicast:** One-to-many (specific group)
+
+---
+
+## 🧰 Key Protocol Examples
+
+| Protocol | Layer     | Purpose                       |
+|----------|-----------|------------------------------|
+| HTTP     | Application | Web communication            |
+| FTP      | Application | File transfer               |
+| DNS      | Application | Domain to IP resolution     |
+| DHCP     | Application | Auto IP assignment          |
+| TCP      | Transport   | Reliable delivery           |
+| UDP      | Transport   | Fast, connectionless delivery|
+| IP       | Network     | Logical addressing & routing |
+| Ethernet | Data Link   | Local frame delivery via MAC |
+
+---
+
+## 📝 Summary
+- Networks use layered models to simplify communication.  
+- Protocols ensure devices speak the same language.  
+- Data is encapsulated with headers/trailers at each layer.  
+- Different protocols work at different layers to achieve reliable and flexible communication.
